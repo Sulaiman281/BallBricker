@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="679.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.controller.StartMenu">
+   <children>
+      <Label layoutX="92.0" layoutY="93.0" text="Player Name:">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name_input" layoutX="138.0" layoutY="125.0" prefHeight="25.0" prefWidth="218.0" promptText="sehra">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Circle fx:id="ball_1" fill="DODGERBLUE" layoutX="48.0" layoutY="278.0" radius="25.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Label layoutX="23.0" layoutY="205.0" text="Ball Theme">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Circle fx:id="ball_2" fill="DODGERBLUE" layoutX="118.0" layoutY="278.0" radius="25.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fx:id="ball_3" fill="DODGERBLUE" layoutX="186.0" layoutY="278.0" radius="25.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fx:id="selected_ball" fill="DODGERBLUE" layoutX="118.0" layoutY="369.0" radius="40.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Label layoutX="408.0" layoutY="205.0" text="Background Color">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="bg_1" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" layoutX="417.0" layoutY="248.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+      <Rectangle fx:id="bg_2" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" layoutX="481.0" layoutY="248.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+      <Rectangle fx:id="bg_3" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="40.0" layoutX="547.0" layoutY="248.0" stroke="BLACK" strokeType="INSIDE" width="40.0" />
+      <Rectangle fx:id="bg_selected" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="80.0" layoutX="461.0" layoutY="316.0" stroke="BLACK" strokeType="INSIDE" width="80.0" />
+      <Button layoutX="495.0" layoutY="503.0" mnemonicParsing="false" onAction="#start_game" prefHeight="40.0" prefWidth="129.0" text="START GAME">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="415.0" layoutY="22.0" text="Welcome">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
